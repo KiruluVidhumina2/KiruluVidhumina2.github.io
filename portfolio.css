@@ -10,10 +10,11 @@ html{
 
 :root{
     --bg1: rgb(255,175,0);
-    --gr1: linear-gradient(90deg, rgba(255,0,224,1) 0%, rgba(255,175,0,1) 100%);
+    --gr1: linear-gradient(144deg, rgba(96,212,14,1) 0%, rgba(0,178,237,1) 100%);
     --bg2: rgb(155,255,0);
     --gr2: linear-gradient(90deg, rgba(155,255,0,1) 0%, rgba(0,212,255,1) 100%);
     --gr3: linear-gradient(144deg, rgba(96,212,14,1) 0%, rgba(0,178,237,1) 100%);
+    --green1: rgba(96,212,14,1);
 }
 
 body{
@@ -45,6 +46,15 @@ body{
 
 }
 
+@keyframes display{
+    from{
+        display: none;
+    }
+    to{
+        display: initial;
+    }
+}
+
 @keyframes fade{
     from{
         opacity: 0%;
@@ -69,7 +79,7 @@ body{
     display: grid;
     position: relative;
     background-image: url('images/bg1.jpg'),
-    var(--gr3);
+    linear-gradient(grey, black);
     background-repeat: repeat;
     background-blend-mode: multiply;
     height: 100vh;
@@ -96,9 +106,13 @@ nav ul li{
     font-weight: bold;
 }
 
+.tag{
+    color: white;
+}
+
 nav a, nav i{
     text-decoration: none;
-    color: black;
+    color: white;
 
 }
 
@@ -107,7 +121,7 @@ nav a, nav i{
     width: 8px;
     height: 13px;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 2px solid white;
     position: relative;
     margin-left: 15px;
 }
@@ -128,7 +142,7 @@ nav a, nav i{
     top: 0;
     left: 0;
     border-radius: 50%;
-    background-color: black;
+    background-color: white;
     transition: .5s;
 }
 
@@ -148,7 +162,7 @@ nav a, nav i{
     height: 100%;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 0;
     border-radius: 50%;
     font-size: 10px;
 }
@@ -158,7 +172,7 @@ nav a, nav i{
     height: 100%;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 0;
     border-radius: 50%;
     font-size: 10px;
 }
@@ -168,7 +182,7 @@ nav a, nav i{
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     border-radius: 50%;
 }
 
@@ -177,7 +191,7 @@ nav a, nav i{
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     border-radius: 50%;
 }
 
@@ -234,6 +248,7 @@ nav a, nav i{
     text-align: left;
     grid-row: 2/3;
     position: relative;
+    color: white;
 }
 
 #hi{
@@ -262,16 +277,15 @@ nav a, nav i{
     top: 72vh;
     transition: 1s;
     transition-delay: 300ms;
-    opacity: 0;
-    
+    opacity: 0;    
 }
 
 #name a{
-    background: var(--bg1);
-    background: var(--gr1);
-    border-radius: 30px;
-    max-width: 10%;
-    text-align: center;
+    /* background: var(--gr1); */
+    border: 3px solid white;
+    border-radius: 10px;
+    font-size: 2vw;
+    width: 15vh;
     padding: 15px;
     cursor: pointer;
     position: absolute;
@@ -280,6 +294,25 @@ nav a, nav i{
     transition-delay: 400ms;
     opacity: 0;
     font-weight: bold;
+    text-align: left;
+}
+
+#messageIcon{
+    position: absolute;
+    font-size: 2vw;
+    right: 5%;
+    top: 30%;
+    color: var(--green1);
+    transition: .5s;
+    transition-delay: 200ms;
+    opacity: 0;
+}
+
+#name a:hover{
+    /* background: var(--gr1); */
+    width: 20vh;
+    border: 3px solid var(--green1);    
+    color: var(--green1);
 }
 
 
@@ -319,6 +352,7 @@ nav a, nav i{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 15vh;
+    background-color: black;
 }
 
 #myImage{
@@ -341,6 +375,7 @@ nav a, nav i{
     align-items: center;
     display: block;
     padding: 24vh 2vh 24vh 0; 
+    color: white;
 }
 
 #whop{
@@ -368,6 +403,8 @@ nav a, nav i{
     grid-gap: 20px;
     text-align: center;
     padding-top: 15vh;
+    padding-bottom: 15vh;
+    background-color: darkslategrey;
 }
 
 .aboutMeDescription{
@@ -392,6 +429,7 @@ nav a, nav i{
     grid-column: 4/8;
     padding-bottom: 8vh;
     visibility: hidden;
+    color: white;
 }
 
 #aboutTopic i{
@@ -545,8 +583,9 @@ nav a, nav i{
 #skills{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 10vh;
     padding: 10vh 0 10vh 0;
+    background-color: black;
+    color: white;
 }
 
 #skillsHeading{
@@ -595,7 +634,7 @@ nav a, nav i{
 }
 
 #bars i{
-    color: black;
+    color: white;
 }
 
 .line{
@@ -701,8 +740,10 @@ nav a, nav i{
 #edu{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 0 10vh 0;
+    padding: 0 0 10vh 0;
     height: 100vh;
+    background-color: darkslategrey;
+    color: white;
 }
 
 #resultBox{
@@ -800,7 +841,7 @@ nav a, nav i{
 }
 
 #eduHeading i{
-    color: black;
+    color: white;
     height: 3vh;
     padding-top: 60px;
     opacity: 0;
@@ -810,7 +851,9 @@ nav a, nav i{
 #contactMe{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 15vh 0;
+    padding: 15vh 0;
+    background-color: darkslategrey;
+    color: white;
 }
 
 #contactHeading{
@@ -837,9 +880,8 @@ nav a, nav i{
 }
 
 #contactForm form{
-    background-color: lightgray;
     padding: 30px;
-    height: 75vh;
+    height: 85vh;
     width: 35vw;
     border-radius: 10px;
     position: relative;
@@ -860,6 +902,7 @@ nav a, nav i{
     outline: none;
     border: 0;
     border-radius: 5px;
+    border: 1px solid lightgrey;
 }
 
 .formGroup textarea{
@@ -870,27 +913,28 @@ nav a, nav i{
     border: 0;
     border-radius: 5px;
     height: 10vw;
+    border: 1px solid lightgrey;
 }
 
 #submitBtn{
     position: absolute;
+    font-size: 1.5vw;
     bottom: 5%;
-    left: 30%;
-    right: 30%;
+    left: 35%;
+    right: 35%;
     outline: none;
     border: 0;
-    border-radius: 30px;
-    padding: 1vw 2vw;
+    border-radius: 10px;
+    padding: 1vw 0;
     font-weight: bold;
-    background: var(--bg1);
     background: var(--gr1);
-    filter: saturate(80%);
+    filter: saturate(0%);
     cursor: pointer;
     transition: 0.5s;
 }
 
 #submitBtn:hover{
-
+    filter: saturate(80%);
 }
 
 #status{
@@ -913,6 +957,7 @@ nav a, nav i{
     display: flex;
     flex-direction: column;
     padding: 15vh 0 15vh 0;
+    background-color: black;
 }
 
 #blogHeading{
@@ -921,6 +966,7 @@ nav a, nav i{
     font-size: 2vw;
     padding-bottom: 15vh;
     opacity: 0;
+    color: white;
 }
 
 #blogBox{
@@ -1142,10 +1188,9 @@ nav a, nav i{
 }
 
 @media (max-width: 730px){
-    #name a{
-        right: -10%;
-        top: 0;
-        cursor: pointer;
+    #contact-btn{
+        right: -10% !important;
+        top: 0 !important;
     }
 
     #kirulu{
@@ -1214,6 +1259,7 @@ nav a, nav i{
 }
 
 
+
 @media(max-width: 480px){
     body{
         overflow-x: hidden !important;
@@ -1223,6 +1269,19 @@ nav a, nav i{
         overflow: hidden !important;
         height: 50vh;
         width: 113%;
+    }
+
+    #messageIcon{
+        display: none !important;
+    }
+
+    #contact-btn{
+        font-size: 4vw !important;
+        width: fit-content !important;
+        top: 20vh !important;
+        right: -20% !important;
+        color: rgba(96,212,14,1);
+        border-color: rgba(96,212,14,1) !important;
     }
 
     #slideNav{height: 120%; justify-content: inherit !important;padding-top: 10vh;}
@@ -1236,15 +1295,15 @@ nav a, nav i{
     #hi{top: 10vh !important;}
     #im{top: 20vh !important;}
     #kirulu{top: 25vh !important;}
-    #contact-btn{top: 20vh !important;}
     #navBars{right: 10% !important;}
 
     #section1{padding-top: 0 !important; width: 113% !important;}
-    #whoTopic, #aboutTopic, #skillTopic h1, #eduHeading h1, #blogHeading h1{font-size: 20px !important;}
+    #whoTopic{font-size: 20px !important;}
     #whop{padding-top: 3vw !important; font-size: 15px !important;}
     #myImage img{width: 30vw !important;}
 
     #aboutMe{width: 113%; padding-top: 5vh !important;}
+    #aboutTopic{font-size: 30px !important;}
     .smallTopic{font-size: 7px !important;}
     .aboutMeDescription{font-size: 2vw ;}
     #photography{justify-self: left;}
@@ -1255,20 +1314,24 @@ nav a, nav i{
     #quickLearn{justify-self: right;}
 
     #skills{width: 113%; padding-top: 10vw !important;}
+    #skillTopic{display: block !important; font-size: 30px !important;}
+    #skillTopic i{padding-left: 10px;}
     #bars{padding: 10vh 5vh 0 10vh;}
     .line{width: 45vw !important;}
     #bars ul li{font-size: 13px !important;}
 
     #edu{width: 113%; padding-top: 10vw !important;}
+    #eduTopic{font-size: 25px !important;}
     #edu ul li{font-size: 15px !important;}
     #olResults, #alResults{padding-left: 5vh !important;}
     #button{width: 55px !important;}
     #results{height: 60vh !important;}
 
     #blog{width: 113%; padding-top: 10vw !important;}
-    #blogHeading h1{font-size: 25px !important;}
+    #blogHeading h1{font-size: 35px !important;}
     #blogHeading{padding-bottom: 10vh !important;}
     #blogBox{padding: 0 0 0 10px;}
+    #blogBox h3{font-size: 10px;}
     #gridCover{filter: saturate(100%);}
     #varCover{background-color: blueviolet; font-size: 3vw !important;}
 
@@ -1279,7 +1342,8 @@ nav a, nav i{
         flex-direction: column;
     }
 
-    #contactHeading{font-size: 15px !important; display: flex; flex-direction: row; padding-bottom: 20px;}
-    #contactForm form{height: fit-content !important; width: inherit;}
-
+    #contactHeading{font-size: 17px !important; display: block !important; padding-bottom: 20px;}
+    #contactForm form{height: fit-content !important; width: inherit; background: none;}
+    .formGroup input{height: 20px; border: 1px solid lightgray;}
+    .formGroup textarea{border: 1px solid lightgray; margin-bottom: 10vh;}
 }
