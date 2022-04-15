@@ -1213,6 +1213,7 @@ nav a, nav i{
     }
 }
 
+
 @media(max-width: 480px){
     body{
         overflow-x: hidden !important;
@@ -1221,7 +1222,7 @@ nav a, nav i{
     #nav_bar{
         overflow: hidden !important;
         height: 50vh;
-        width: 133%;
+        width: 113%;
     }
 
     #name{
