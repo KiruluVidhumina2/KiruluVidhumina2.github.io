@@ -1213,29 +1213,6 @@ nav a, nav i{
     }
 }
 
-@media(max-width:400px){
-    #aboutMe{
-        padding-left: 9vh;
-    }
-
-    .smallTopic{
-        font-size: 5px;
-    }
-
-    .aboutMeDescription p{
-        font-size: 10px;
-    }
-    
-    #loveSports{
-        justify-self: right;
-    }
-
-    #age{
-        padding-left: 3vw;
-    }
-}
-
-
 @media(max-width: 480px){
     body{
         overflow-x: hidden !important;
