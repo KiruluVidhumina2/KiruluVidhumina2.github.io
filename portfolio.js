@@ -118,7 +118,6 @@ if(navBary < 10){
 }
 
 
-
 function alevel(){
     btn.style.left = '50%';
     olResult.style.left = '-15vw';
@@ -218,27 +217,38 @@ gridCover.addEventListener('mouseleave', function(){
 document.getElementById('darkMode').addEventListener('click', function(){
   document.getElementById('nav_bar').style.backgroundImage = 'url(images/bg1.jpg),linear-gradient(grey, black)';
   document.getElementById('nav_bar').style.backgroundBlendMode = 'multiply';
-  document.querySelector('body').style.color = 'white';
+  document.getElementById('name').style.color = 'white';
+  document.getElementById('contact-btn').style.color = 'white';
+  document.getElementById('contact-btn').style.borderColor = 'white';
+  document.getElementById('messageIcon').style.color = 'rgba(96,212,14,1)';
   document.getElementById('topic').style.color = 'white';
-  document.querySelector('body').style.background = 'darkslategrey';
-  document.querySelector('#cssGrid').style.background = 'darkslategrey';
+  document.querySelector('#cssGrid').style.background = 'darkslategrey !important';
   document.querySelector('#cssVar').style.background = 'darkslategrey';
 
   for(let i = 0; i < document.getElementsByClassName('section').length; i+=2){
     document.getElementsByClassName('section')[i].style.background = 'black';
+    document.getElementsByClassName('section')[i].style.color = 'white';
+  }
+
+  for(let i = 1; i <= document.getElementsByClassName('section').length; i+=2){
+    document.getElementsByClassName('section')[i].style.background = 'darkslategrey';
+    document.getElementsByClassName('section')[i].style.color = 'white';
   }
 
   document.querySelector('#cssGrid').style.color = 'white';
   document.querySelector('#cssVar').style.color = 'white';
+  document.getElementById('who').style.color = 'white';
   document.getElementById('aboutMe').style.color = 'black';
   document.getElementById('aboutTopic').style.color = 'white';
   document.getElementById('contactForm').style.color = 'black';
   document.querySelector('#modeBtn').style.border = '2px solid white';
-  document.querySelector('#toggleCircle').style.left = '50%';
+  document.querySelector('#toggleCircle').style.left = '0%';
   document.querySelector('#toggleCircle').style.backgroundColor = 'white';
-  document.querySelector('#toggleCircleNew').style.left = '50%';
+  document.querySelector('#toggleCircleNew').style.left = '0%';
   document.getElementById('blog1Topic').style.color = 'black';
   document.getElementById('blog2Topic').style.color = 'black';
+  document.getElementById('sendIcon').style.color = 'black';
+
 
   const icons = document.getElementsByTagName('i');
   const tags = document.getElementsByClassName('tag');
@@ -256,6 +266,10 @@ document.getElementById('darkMode').addEventListener('click', function(){
 document.getElementById('lightMode').addEventListener('click', function(){
   document.getElementById('nav_bar').style.backgroundImage = 'url(images/bg1.jpg),linear-gradient(144deg, rgba(96,212,14,1) 0%, rgba(0,178,237,1) 100%)';
   document.getElementById('nav_bar').style.backgroundBlendMode = 'multiply';  
+  document.getElementById('name').style.color = 'black';
+  document.getElementById('contact-btn').style.color = 'black';
+  document.getElementById('contact-btn').style.borderColor = 'black';
+  document.getElementById('messageIcon').style.color = 'rgba(96,212,14,1)';
   document.querySelector('body').style.color = 'black';
   document.querySelector('body').style.background = 'white';
   document.getElementById('topic').style.color = 'black';
@@ -264,18 +278,20 @@ document.getElementById('lightMode').addEventListener('click', function(){
   document.querySelector('#cssVar').style.background = 'white';
   document.querySelector('#cssGrid').style.color = 'black';
   document.querySelector('#cssVar').style.color = 'black';
+  document.getElementById('sendIcon').style.color = 'black';
 
-  for(let i = 0; i < document.getElementsByClassName('section').length; i+=2){
+
+  for(let i = 0; i < document.getElementsByClassName('section').length; i++){
     document.getElementsByClassName('section')[i].style.background = 'white';
+    document.getElementsByClassName('section')[i].style.color = 'black';
   }
   
-  document.getElementById('aboutMe').style.color = 'black';
+  document.getElementById('who').style.color = 'black';
   document.getElementById('aboutTopic').style.color = 'black';
-  document.getElementById('contactForm').style.color = 'black';
   document.querySelector('#modeBtn').style.border = '2px solid black';
-  document.querySelector('#toggleCircle').style.left = '0';
+  document.querySelector('#toggleCircle').style.left = '50%';
   document.querySelector('#toggleCircle').style.backgroundColor = 'black';
-  document.querySelector('#toggleCircleNew').style.left = '0';
+  document.querySelector('#toggleCircleNew').style.left = '50%';
 
   
   const icons = document.getElementsByTagName('i');
@@ -290,6 +306,11 @@ document.getElementById('lightMode').addEventListener('click', function(){
   };
 
   document.getElementById('cross').style.color = 'white';
+  document.getElementById('twitterBig').style.color  = 'white';
+  document.getElementById('linkedinBig').style.color  = 'white';
+  document.getElementById('facebookBig').style.color  = 'white';
+  document.getElementById('instagramBig').style.color  = 'white';
+  document.getElementById('githubBig').style.color  = 'white';
 
 });
 
@@ -297,7 +318,9 @@ document.getElementById('lightMode').addEventListener('click', function(){
 document.getElementById('darkModeNew').addEventListener('click', function(){
   document.getElementById('nav_bar').style.backgroundImage = 'url(images/bg1.jpg),linear-gradient(grey, black)';
   document.getElementById('nav_bar').style.backgroundBlendMode = 'multiply';
-  document.querySelector('body').style.color = 'white';
+  document.getElementById('name').style.color = 'white';
+  document.getElementById('contact-btn').style.color = 'white';
+  document.getElementById('contact-btn').style.borderColor = 'white';
   document.getElementById('topic').style.color = 'white';
   document.querySelector('body').style.background = 'darkslategrey';
   document.querySelector('#cssGrid').style.background = 'darkslategrey';
@@ -305,19 +328,28 @@ document.getElementById('darkModeNew').addEventListener('click', function(){
 
   for(let i = 0; i < document.getElementsByClassName('section').length; i+=2){
     document.getElementsByClassName('section')[i].style.background = 'black';
+    document.getElementsByClassName('section')[i].style.color = 'white';
+  }
+
+  for(let i = 1; i <= document.getElementsByClassName('section').length; i+=2){
+    document.getElementsByClassName('section')[i].style.background = 'darkslategrey';
+    document.getElementsByClassName('section')[i].style.color = 'white';
   }
 
   document.querySelector('#cssGrid').style.color = 'white';
   document.querySelector('#cssVar').style.color = 'white';
+  document.getElementById('who').style.color = 'white';
   document.getElementById('aboutMe').style.color = 'black';
   document.getElementById('aboutTopic').style.color = 'white';
   document.getElementById('contactForm').style.color = 'black';
   document.querySelector('#modeBtn').style.border = '2px solid white';
-  document.querySelector('#toggleCircle').style.left = '50%';
+  document.querySelector('#toggleCircle').style.left = '0%';
   document.querySelector('#toggleCircle').style.backgroundColor = 'white';
-  document.querySelector('#toggleCircleNew').style.left = '50%';
+  document.querySelector('#toggleCircleNew').style.left = '0%';
   document.getElementById('blog1Topic').style.color = 'black';
   document.getElementById('blog2Topic').style.color = 'black';
+  document.getElementById('sendIcon').style.color = 'black';
+
 
   const icons = document.getElementsByTagName('i');
   const tags = document.getElementsByClassName('tag');
@@ -333,7 +365,10 @@ document.getElementById('darkModeNew').addEventListener('click', function(){
 
 document.getElementById('lightModeNew').addEventListener('click', function(){
   document.getElementById('nav_bar').style.backgroundImage = 'url(images/bg1.jpg),linear-gradient(144deg, rgba(96,212,14,1) 0%, rgba(0,178,237,1) 100%)';
-  document.getElementById('nav_bar').style.backgroundBlendMode = 'multiply';  
+  document.getElementById('nav_bar').style.backgroundBlendMode = 'multiply';
+  document.getElementById('name').style.color = 'black';
+  document.getElementById('contact-btn').style.color = 'black';
+  document.getElementById('contact-btn').style.borderColor = 'black';  
   document.querySelector('body').style.color = 'black';
   document.querySelector('body').style.background = 'white';
   document.getElementById('topic').style.color = 'black';
@@ -342,18 +377,22 @@ document.getElementById('lightModeNew').addEventListener('click', function(){
   document.querySelector('#cssVar').style.background = 'white';
   document.querySelector('#cssGrid').style.color = 'black';
   document.querySelector('#cssVar').style.color = 'black';
+  document.getElementById('sendIcon').style.color = 'black';
 
-  for(let i = 0; i < document.getElementsByClassName('section').length; i+=2){
+
+  for(let i = 0; i < document.getElementsByClassName('section').length; i++){
     document.getElementsByClassName('section')[i].style.background = 'white';
+    document.getElementsByClassName('section')[i].style.color = 'black';
   }
   
+  document.getElementById('who').style.color = 'black';
   document.getElementById('aboutMe').style.color = 'black';
   document.getElementById('aboutTopic').style.color = 'black';
   document.getElementById('contactForm').style.color = 'black';
   document.querySelector('#modeBtn').style.border = '2px solid black';
-  document.querySelector('#toggleCircle').style.left = '0';
+  document.querySelector('#toggleCircle').style.left = '50%';
   document.querySelector('#toggleCircle').style.backgroundColor = 'black';
-  document.querySelector('#toggleCircleNew').style.left = '0';
+  document.querySelector('#toggleCircleNew').style.left = '50%';
   
   const icons = document.getElementsByTagName('i');
   const tags = document.getElementsByClassName('tag');
@@ -367,6 +406,11 @@ document.getElementById('lightModeNew').addEventListener('click', function(){
   };
 
   document.getElementById('cross').style.color = 'white';
+  document.getElementById('twitterBig').style.color  = 'white';
+  document.getElementById('linkedinBig').style.color  = 'white';
+  document.getElementById('facebookBig').style.color  = 'white';
+  document.getElementById('instagramBig').style.color  = 'white';
+  document.getElementById('githubBig').style.color  = 'white';
 
 });
 
@@ -404,5 +448,16 @@ for(let i = 0; i < aboutTitle.length; i++){
     aboutTitle[i].style.transform = 'scale(1)';
   });
 };
+
+
+contactBtn.addEventListener('mouseover', function(){
+  contactBtn.style.transition = '.5s';
+  document.getElementById('messageIcon').style.opacity = '1';
+})
+
+contactBtn.addEventListener('mouseleave', function(){
+  contactBtn.style.transition = '.5s';
+  document.getElementById('messageIcon').style.opacity = '0';
+})
 
 
