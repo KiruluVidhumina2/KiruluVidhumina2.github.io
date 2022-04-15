@@ -1225,6 +1225,10 @@ nav a, nav i{
         width: 113%;
     }
 
+    #slideNav{height: 120%; justify-content: inherit !important;padding-top: 10vh;}
+    #slideNav a {font-size: 30px;}
+    #cross{font-size: 35px !important;}
+
     #name{
         height: 30vh;
     }
@@ -1240,7 +1244,7 @@ nav a, nav i{
     #whop{padding-top: 3vw !important; font-size: 15px !important;}
     #myImage img{width: 30vw !important;}
 
-    #aboutMe{width: 113%; padding-top: 0 !important;}
+    #aboutMe{width: 113%; padding-top: 5vh !important;}
     .smallTopic{font-size: 7px !important;}
     .aboutMeDescription{font-size: 2vw ;}
     #photography{justify-self: left;}
@@ -1251,5 +1255,31 @@ nav a, nav i{
     #quickLearn{justify-self: right;}
 
     #skills{width: 113%; padding-top: 10vw !important;}
+    #bars{padding: 10vh 5vh 0 10vh;}
+    .line{width: 45vw !important;}
     #bars ul li{font-size: 13px !important;}
+
+    #edu{width: 113%; padding-top: 10vw !important;}
+    #edu ul li{font-size: 15px !important;}
+    #olResults, #alResults{padding-left: 5vh !important;}
+    #button{width: 55px !important;}
+    #results{height: 60vh !important;}
+
+    #blog{width: 113%; padding-top: 10vw !important;}
+    #blogHeading h1{font-size: 25px !important;}
+    #blogHeading{padding-bottom: 10vh !important;}
+    #blogBox{padding: 0 0 0 10px;}
+    #gridCover{filter: saturate(100%);}
+    #varCover{background-color: blueviolet; font-size: 3vw !important;}
+
+    #contactMe{
+        width: 113%;
+        padding-top: 10vw !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contactHeading{font-size: 15px !important; display: flex; flex-direction: row; padding-bottom: 20px;}
+    #contactForm form{height: fit-content !important; width: inherit;}
+
 }
