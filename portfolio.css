@@ -1234,3 +1234,44 @@ nav a, nav i{
         padding-left: 3vw;
     }
 }
+
+
+@media(max-width: 480px){
+    body{
+        overflow-x: hidden !important;
+    }
+
+    #nav_bar{
+        overflow: hidden !important;
+        height: 50vh;
+        width: 133%;
+    }
+
+    #name{
+        height: 30vh;
+    }
+
+    #hi{top: 10vh !important;}
+    #im{top: 20vh !important;}
+    #kirulu{top: 25vh !important;}
+    #contact-btn{top: 20vh !important;}
+    #navBars{right: 10% !important;}
+
+    #section1{padding-top: 0 !important; width: 113% !important;}
+    #whoTopic, #aboutTopic, #skillTopic h1, #eduHeading h1, #blogHeading h1{font-size: 20px !important;}
+    #whop{padding-top: 3vw !important; font-size: 15px !important;}
+    #myImage img{width: 30vw !important;}
+
+    #aboutMe{width: 113%; padding-top: 0 !important;}
+    .smallTopic{font-size: 7px !important;}
+    .aboutMeDescription{font-size: 2vw ;}
+    #photography{justify-self: left;}
+    #helpful{justify-self: right;}
+    #challenges{justify-self: left;}
+    #travelling{justify-self: right;}
+    #interact{justify-self: left;}
+    #quickLearn{justify-self: right;}
+
+    #skills{width: 113%; padding-top: 10vw !important;}
+    #bars ul li{font-size: 13px !important;}
+}
