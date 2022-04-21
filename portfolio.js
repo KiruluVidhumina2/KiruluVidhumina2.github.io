@@ -231,15 +231,15 @@ document.getElementById('darkMode').addEventListener('click', function(){
   }
 
   for(let i = 1; i <= document.getElementsByClassName('section').length; i+=2){
-    document.getElementsByClassName('section')[i].style.background = 'darkslategrey';
-    document.getElementsByClassName('section')[i].style.color = 'white';
+    document.getElementsByClassName('section')[i].style.background = 'white';
+    document.getElementsByClassName('section')[i].style.color = 'black';
   }
 
   document.querySelector('#cssGrid').style.color = 'white';
   document.querySelector('#cssVar').style.color = 'white';
   document.getElementById('who').style.color = 'white';
   document.getElementById('aboutMe').style.color = 'black';
-  document.getElementById('aboutTopic').style.color = 'white';
+  document.getElementById('aboutTopic').style.color = 'black';
   document.getElementById('contactForm').style.color = 'black';
   document.querySelector('#modeBtn').style.border = '2px solid white';
   document.querySelector('#toggleCircle').style.left = '0%';
@@ -273,6 +273,7 @@ document.getElementById('lightMode').addEventListener('click', function(){
   document.querySelector('body').style.color = 'black';
   document.querySelector('body').style.background = 'white';
   document.getElementById('topic').style.color = 'black';
+  document.getElementById('aboutTopic').style.color = 'black';
   document.getElementById('blogTag').style.color = 'white';
   document.querySelector('#cssGrid').style.background = 'white';
   document.querySelector('#cssVar').style.background = 'white';
