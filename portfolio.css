@@ -109,13 +109,14 @@ nav ul li{
 .tag{
     color: white;
 }
+.tag:hover{
+    color: orange;
+}
 
 nav a, nav i{
     text-decoration: none;
     color: white;
-
 }
-
 
 #modeBtn{
     width: 8px;
@@ -404,7 +405,7 @@ nav a, nav i{
     text-align: center;
     padding-top: 15vh;
     padding-bottom: 15vh;
-    background-color: white;
+    background-color: #303030;
 }
 
 .aboutMeDescription{
@@ -429,7 +430,7 @@ nav a, nav i{
     grid-column: 4/8;
     padding-bottom: 8vh;
     visibility: hidden;
-    color: black;
+    color: white;
 }
 
 #aboutTopic i{
@@ -642,7 +643,7 @@ nav a, nav i{
     width: 33vw;
     height: 8px;
     border-radius: 10px;
-    background-color: lightgray;
+    background-color: grey;
     margin-left: 10px;
     position: relative;
 }
@@ -742,8 +743,8 @@ nav a, nav i{
     grid-template-columns: 1fr 1fr;
     padding: 0 0 10vh 0;
     height: 100vh;
-    background-color: white;
-    color: black;
+    background-color: #303030;
+    color: white;
 }
 
 #resultBox{
@@ -772,9 +773,8 @@ nav a, nav i{
     outline: none;
     position: relative;
     font-weight: bold;
-    
+    color: white;
 }
-
 
 #button{
     top: 0;
@@ -788,7 +788,6 @@ nav a, nav i{
     border-radius: 30px;
 }
 
-
 #results{
     display: grid;
 }
@@ -801,7 +800,7 @@ nav a, nav i{
     position: absolute;
     padding: 20px;
     top: 38vh;
-    left: 15vw;
+    left: 13vw;
     font-size: 1.2vw;
     line-height: 2rem;
     font-weight: bold;
@@ -809,6 +808,7 @@ nav a, nav i{
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    background-color: rgba(128,128,128,.3);
 }
 
 #alResults{
@@ -824,6 +824,8 @@ nav a, nav i{
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    background-color: rgba(128,128,128,.3);
+
 }
 
 
@@ -849,7 +851,7 @@ nav a, nav i{
 }
 
 #eduHeading i{
-    color: black;
+    color: white;
     height: 3vh;
     padding-top: 60px;
     opacity: 0;
@@ -860,8 +862,8 @@ nav a, nav i{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 15vh 0;
-    background-color: white;
-    color: black;
+    background-color: #303030;
+    color: white;
 }
 
 #contactHeading{
@@ -935,13 +937,13 @@ nav a, nav i{
     border-radius: 10px;
     padding: 1vw 0;
     font-weight: bold;
-    background: var(--gr1);
-    filter: saturate(0%);
+    background: rgba(128,128,128,.3);
     cursor: pointer;
     transition: 0.5s;
 }
 
 #submitBtn:hover{
+    background: var(--gr1);
     filter: saturate(80%);
 }
 
@@ -994,7 +996,8 @@ nav a, nav i{
     width: 80%;
     transform: scale(0);
     border-radius: 10px;
-    background-color: lightcoral;
+    background-color: rgba(128,128,128,.5);
+    color: white;
     cursor: pointer;
     margin-left: 4vw;
     box-shadow:5px 5px 20px rgba(0,0,0,0.3);
@@ -1037,7 +1040,8 @@ nav a, nav i{
     transform: scale(0);
     border-radius: 10px;
     cursor: pointer;
-    background-color: lightcyan;
+    background-color: rgba(128,128,128,.5);
+    color: white;
     margin-left: 4vw;
     box-shadow:5px 5px 20px rgba(0,0,0,0.3);
     transition: 1s;
