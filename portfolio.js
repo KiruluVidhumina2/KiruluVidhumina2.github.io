@@ -216,7 +216,7 @@ const user = {
   ip : '202.129.234.46'
 }
 
-const client = LDClient.initialize('63ea713acd15d4133847f7b1', user)
+const client = LDClient.initialize('63ea713acd15d4133847f7b2', user)
 
 client.on('change', function() {
   const showfeature = client.variation('restriction-test', false);
