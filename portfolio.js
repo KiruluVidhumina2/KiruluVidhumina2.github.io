@@ -213,7 +213,6 @@ gridCover.addEventListener('mouseleave', function(){
 
 const user = {
   key : 'anonymous',
-  ip : '202.129.234.46'
 }
 
 const client = LDClient.initialize('63ea713acd15d4133847f7b1', user)
