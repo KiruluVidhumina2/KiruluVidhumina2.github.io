@@ -220,6 +220,8 @@ const client = LDClient.initialize('63ea713acd15d4133847f7b1', user)
 client.on('change', function() {
   const showfeature = client.variation('restriction-test', false);
 
+  console.log(showfeature)
+
   if(showfeature) {
     console.log('first')
     const aboutTitle = document.getElementsByClassName('aboutTiles');
