@@ -44,7 +44,7 @@ document.addEventListener('scroll', function(){
     const navY = document.getElementById('nav_bar').getBoundingClientRect().y;
 
     
-    console.log(whoy, clientHeight, resultY, navY);
+    // console.log(whoy, clientHeight, resultY, navY);
 
     if(navY < -4){
       document.getElementById('nav_links').style.background = 'linear-gradient(144deg, rgba(96,212,14,1) 0%, rgba(0,178,237,1) 100%)';
@@ -53,7 +53,7 @@ document.addEventListener('scroll', function(){
     }
 
     if(whoy < 385.421875) {
-        console.log('here')
+        // console.log('here')
         whoTopic.style.animation = 'pop 1.5s';
         whoTopic.style.visibility = 'visible';
         whop.style.animation = 'pop 1.5s';
@@ -102,7 +102,7 @@ document.addEventListener('scroll', function(){
       document.getElementById('blog2').style.transform = 'scale(1)';
     }
 
-    console.log('ev')
+    // console.log('ev')
 });
 
 const navBary = navBar.getBoundingClientRect().y;
