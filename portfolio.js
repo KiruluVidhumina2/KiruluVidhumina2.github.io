@@ -221,6 +221,7 @@ client.on('change', function() {
   const showfeature = client.variation('restriction-test', false);
 
   if(showfeature) {
+    console.log('first')
     const aboutTitle = document.getElementsByClassName('aboutTiles');
 
     for(let i = 0; i < aboutTitle.length; i++){
